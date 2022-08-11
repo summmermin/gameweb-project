@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "맑은 고딕", "Malgun-Godik", sans-serif;
+}
+h1 {
+  height: 53px;
+}
+#navbar {
+  position: relative;
+  z-index: 999;
+}
+#navbar ul li {
+  color: #333;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+#navbar ul li ul {
+  display: none;
+  width: 100%;
+}
+#navbar > ul > li > a {
+  height: 40px;
+}
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: 1rem;
+}
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+#navbar ul li ul li:hover {
+  background: rgb(179 175 175);
+}
+#navbar > ul > li {
+  width: 15%;
+}
+.logo a {
+  background: url(img/logo_nintendo_red.gif) no-repeat center;
+  display: block;
+  margin: 10px;
+}
+.logo {
+  background: #e60012;
+  text-indent: -9999999px;
+  width: 15%;
+}
+#navbar .login {
+  width: 93px;
+  position: absolute;
+  right: 78px;
+  height: 53px;
+}
+#navbar .login a {
+  display: block;
+  height: 28px;
+  width: 82px;
+  margin: -4px -4px;
+  background: #ff7f50ed;
+  padding: 3px 0px;
+  border-radius: 40px;
+  color: #fff;
+}
+#navbar .search {
+  width: 75px;
+  background: url(img/search.png) no-repeat 0 0;
+  position: absolute;
+  right: -20px;
+  top: 14px;
+}
+/* //navbar */
+/* contents */
+.contents .content_1 ul {
+  justify-content: center;
+}
+.content_1 li img {
+  width: 260px;
+  border-radius: 12%;
+  box-shadow: 2px 2px 16px #888;
+  margin: 45px 25px;
+}
+.content_1 li:hover img {
+  filter: brightness(110%);
+  transform: translate(0, -20px);
+  border: 8px solid #e60013c5;
+  box-shadow: 2px 2px 16px #e60013c5;
+  transition: all .2s;
+}
+.content_1 li a {
+  display: block;
+}
+.content_1 > ul {
+  display: flex;
+}
+.content_1 > ul li {
+  flex-direction: row;
+}
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.085em;
+  margin: 0 0 15px 0px;
+}
+.content_2 {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 95px);
+}
+.content_2 h3 > span {
+  margin-left: 11px;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+}
+.content_2 .news_top {
+  display: flex;
+}
+.content_2 .news_bottom {
+  display: flex;
+}
+.content_2 .news_txt {
+  width: 276px;
+}
+.content_2 .news {
+  flex-direction: row;
+  justify-content: center;
+  height: 307px;
+  margin: 0 30px 0 0;
+}
+.content_2 .news img{
+  border-radius: 30px;
+}
+.content_2 .news img:hover{
+  border-radius: 30px;
+  transition: all .2s;
+  filter: brightness(110%);
+}
+/* //contents */
+/* ========swiper========== */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}

@@ -45,7 +45,7 @@ h1 {
   width: 15%;
 }
 .logo a {
-  background: url(img/logo_nintendo_red.gif) no-repeat center;
+  background: url(../img/logo_nintendo_red.gif) no-repeat center;
   display: block;
   margin: 10px;
 }
@@ -72,77 +72,87 @@ h1 {
 }
 #navbar .search {
   width: 75px;
-  background: url(img/search.png) no-repeat 0 0;
+  background: url(../img/search.png) no-repeat 0 0;
   position: absolute;
   right: -20px;
   top: 14px;
 }
 /* //navbar */
 /* contents */
-.contents .content_1 ul {
-  justify-content: center;
-}
-.content_1 li img {
-  width: 260px;
-  border-radius: 12%;
-  box-shadow: 2px 2px 16px #888;
-  margin: 45px 25px;
-}
-.content_1 li:hover img {
-  filter: brightness(110%);
-  transform: translate(0, -20px);
-  border: 8px solid #e60013c5;
-  box-shadow: 2px 2px 16px #e60013c5;
-  transition: all .2s;
-}
-.content_1 li a {
-  display: block;
-}
-.content_1 > ul {
-  display: flex;
-}
-.content_1 > ul li {
-  flex-direction: row;
-}
 h3 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.085em;
   margin: 0 0 15px 0px;
 }
-.content_2 {
+.content_1 {
   float: left;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 95px);
 }
-.content_2 h3 > span {
+.content_1 h3 > span {
   margin-left: 11px;
   font-size: 15px;
   font-weight: normal;
   letter-spacing: -0.01em;
 }
-.content_2 .news_top {
+/*  */
+.content_1 .news_top {
   display: flex;
 }
-.content_2 .news_bottom {
+.content_1 .news_bottom {
   display: flex;
 }
-.content_2 .news_txt {
+.content_1 .news_txt {
   width: 276px;
 }
-.content_2 .news {
+.content_1 .news {
   flex-direction: row;
   justify-content: center;
   height: 307px;
   margin: 0 30px 0 0;
 }
-.content_2 .news img{
+.content_1 .news img {
   border-radius: 30px;
 }
-.content_2 .news img:hover{
+.content_1 .news img:hover {
   border-radius: 30px;
-  transition: all .2s;
+  transition: all 0.2s;
+  filter: brightness(110%);
+}
+.content_2 a {
+  position: relative;
+  display: block;
+  height: 140px;
+  background: #fe7c0a;
+  top: 800px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  padding: 45px;
+}
+.content_3 {
+  position: absolute;
+  top: 1900px;
+  left: 50%;
+  transform: translate(-50%, 95px);
+}
+.content_3 .im_software_top {
+  display: flex;
+}
+.content_3 .im_software_top .im_software {
+  flex-direction: row;
+  justify-content: center;
+  height: 307px;
+  margin: 0 30px 0 0;
+}
+.content_3 .im_software_top .im_software img {
+  border-radius: 30px;
+}
+.content_3 .im_software_top .im_software img:hover {
+  border-radius: 30px;
+  transition: all 0.2s;
   filter: brightness(110%);
 }
 /* //contents */

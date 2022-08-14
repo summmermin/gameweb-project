@@ -3,17 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   font-family: "맑은 고딕", "Malgun-Godik", sans-serif;
 }
+
 h1 {
   height: 53px;
 }
+
 #navbar {
   position: relative;
   z-index: 999;
+  overflow-x: hidden;
 }
+
 #navbar ul li {
   color: #333;
   display: inline-block;
@@ -21,45 +26,55 @@ h1 {
   position: relative;
   text-align: center;
 }
+
 #navbar ul li ul {
   display: none;
   width: 100%;
 }
-#navbar > ul > li > a {
+
+#navbar>ul>li>a {
   height: 40px;
 }
+
 #navbar ul li:hover ul {
   display: block;
   position: absolute;
   left: 0;
   margin-top: 1rem;
 }
+
 #navbar ul li:hover ul li {
   display: block;
   background: #e7e7e7;
 }
+
 #navbar ul li ul li:hover {
   background: rgb(179 175 175);
 }
-#navbar > ul > li {
+
+#navbar>ul>li {
   width: 15%;
 }
+
 .logo a {
   background: url(../img/logo_nintendo_red.gif) no-repeat center;
   display: block;
   margin: 10px;
 }
+
 .logo {
   background: #e60012;
   text-indent: -9999999px;
   width: 15%;
 }
+
 #navbar .login {
   width: 93px;
   position: absolute;
   right: 78px;
   height: 53px;
 }
+
 #navbar .login a {
   display: block;
   height: 28px;
@@ -70,6 +85,7 @@ h1 {
   border-radius: 40px;
   color: #fff;
 }
+
 #navbar .search {
   width: 75px;
   background: url(../img/search.png) no-repeat 0 0;
@@ -77,6 +93,7 @@ h1 {
   right: -20px;
   top: 14px;
 }
+
 /* //navbar */
 /* contents */
 h3 {
@@ -85,76 +102,167 @@ h3 {
   letter-spacing: -0.085em;
   margin: 0 0 15px 0px;
 }
+
+.img_br img {
+  margin: 20px 0 0 0;
+}
+
+.contents .news span,
+.contents .im_software span {
+  color: #e60012;
+  font-size: 14px;
+}
+
+.contents .news .p_tit,
+.contents .im_software .p_tit {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  line-height: 22px;
+  height: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contents .news .p_txt,
+.contents .im_software .p_txt {
+  font-size: 13px;
+  color: #737373;
+  letter-spacing: -0.075em;
+  line-height: 20px;
+}
+
 .content_1 {
   float: left;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 95px);
 }
-.content_1 h3 > span {
+
+.content_1 h3>span {
   margin-left: 11px;
   font-size: 15px;
   font-weight: normal;
   letter-spacing: -0.01em;
 }
-/*  */
+
 .content_1 .news_top {
   display: flex;
 }
+
 .content_1 .news_bottom {
   display: flex;
+  margin: 20px 0 0 0;
 }
-.content_1 .news_txt {
-  width: 276px;
+
+.content_1 .news_txt, .content_3 .im_software_txt {
+  width: 285px;
 }
+
 .content_1 .news {
   flex-direction: row;
   justify-content: center;
   height: 307px;
   margin: 0 30px 0 0;
 }
+
 .content_1 .news img {
   border-radius: 30px;
 }
+
 .content_1 .news img:hover {
   border-radius: 30px;
   transition: all 0.2s;
   filter: brightness(110%);
 }
+
 .content_2 a {
   position: relative;
   display: block;
   height: 140px;
   background: #fe7c0a;
-  top: 800px;
+  top: 820px;
   color: #fff;
-  font-size: 2em;
   text-align: center;
-  padding: 45px;
+  padding: 53px 0 0 0;
 }
+
+.content_2 h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
 .content_3 {
   position: absolute;
   top: 1900px;
   left: 50%;
   transform: translate(-50%, 95px);
+  margin: 20px 0 0 0;
 }
-.content_3 .im_software_top {
+
+.content_3 .im_software_top,
+.content_3 .im_software_bottom {
   display: flex;
 }
-.content_3 .im_software_top .im_software {
+.content_3 .im_software_bottom{
+  margin: 20px 0 0 0;
+}
+
+.content_3 .im_software_top .im_software,
+.content_3 .im_software_bottom .im_software {
   flex-direction: row;
   justify-content: center;
   height: 307px;
   margin: 0 30px 0 0;
 }
-.content_3 .im_software_top .im_software img {
+
+.content_3 .im_software_top .im_software img,
+.content_3 .im_software_bottom .im_software img {
   border-radius: 30px;
 }
-.content_3 .im_software_top .im_software img:hover {
+
+.content_3 .im_software img:hover {
   border-radius: 30px;
   transition: all 0.2s;
   filter: brightness(110%);
 }
+
+.content_4 h3 {
+  font-weight: 600;
+}
+
+.content_4 {
+  position: relative;
+  height: 140px;
+  text-align: center;
+  padding: 45px 0 0 0;
+  top: 1550px;
+  margin: 100px 0 0 0;
+}
+
+.content_4_2 {
+  background: #e60012;
+  position: relative;
+  top: 1530px;
+  height: 140px;
+  margin: 20px 0 0 0;
+}
+
+.content_4_2 ul {
+  text-align: center;
+}
+
+.content_4_2 li {
+  width: 33.3%;
+  margin: 60px 0;
+}
+
+.content_4_2 li span {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
 /* //contents */
 /* ========swiper========== */
 .swiper {

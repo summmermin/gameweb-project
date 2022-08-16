@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper_1.css" />
     <link rel="stylesheet" href="css/style01.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/gnb.js"></script>
   </head>
 
   <body>
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
       <div class="logo_wrap">
         <h1 class="logo fl"><a href="#">logo</a></h1>
       </div>
-      <ul>
+      <p class="openMOgnb">
+        <a href="#"><b class="ir_so">메뉴열기</b><span></span><span></span><span></span></a>
+      </p>
+      <ul class="ul_wrap">
         <li>
           <a href="#">닌텐도스위치</a>
           <ul>
@@ -70,24 +75,22 @@
         <li class="login"><a href="#">로그인</a></li>
         <li class="search"><a href="#"></a></li>
       </ul>
+      <p class="closePop"><a href="#">닫기</a></p>
     </nav>
     <!-- Swiper -->
-    <div
-      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-      class="swiper mySwiper2"
-    >
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="img/main1.jpg" />
+          <img src="img/main1.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide">
-          <img src="img/main2.jpg" />
+          <img src="img/main2.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide">
-          <img src="img/main3.jpg" />
+          <img src="img/main3.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide">
-          <img src="img/main5.jpg" />
+          <img src="img/main5.jpg" alt="닌텐도 메인슬라이드" />
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -96,16 +99,16 @@
     <div thumbsSlider="" class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide img_br">
-          <img src="img/main1.jpg" />
+          <img src="img/main1.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide img_br">
-          <img src="img/main2.jpg" />
+          <img src="img/main2.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide img_br">
-          <img src="img/main3.jpg" />
+          <img src="img/main3.jpg" alt="닌텐도 메인슬라이드" />
         </div>
         <div class="swiper-slide img_br">
-          <img src="img/main5.jpg" />
+          <img src="img/main5.jpg" alt="닌텐도 메인슬라이드" />
         </div>
       </div>
     </div>
@@ -117,8 +120,8 @@
           새롭게 알려 드립니다
           <span>News & Update</span>
         </h3>
-        <div class="news_top">
-          <div class="news">
+        <div class="news_top cf">
+          <div class="news fl">
             <a href="#">
               <img src="img/n1.jpg" alt="" width="276" />
             </a>
@@ -129,7 +132,7 @@
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n2.jpg" alt="" width="276" />
             </a>
@@ -140,86 +143,70 @@
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n3.jpg" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『커비의 드림 뷔페』가 8월 17일 배포 결정. 소개 영상도
-                공개되었습니다.
-              </p>
+              <p class="p_tit">『커비의 드림 뷔페』가 8월 17일 배포 결정. 소개 영상도 공개되었습니다.</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n4.png" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『마리오 카트 8 디럭스 - 부스터 코스 패스』 CM2가
-                공개되었습니다.
-              </p>
+              <p class="p_tit">『마리오 카트 8 디럭스 - 부스터 코스 패스』 CM2가 공개되었습니다.</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
         </div>
         <div class="news_bottom">
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n5.jpg" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『스플래툰 3 Direct』에서 새로운 정보가 공개! 발매 전에
-                소프트웨어를 체험할 수 있는 「전야제」도 개최 결정!
-              </p>
+              <p class="p_tit">『스플래툰 3 Direct』에서 새로운 정보가 공개! 발매 전에 소프트웨어를 체험할 수 있는 「전야제」도 개최 결정!</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n6.jpg" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『파이어 엠블렘 무쌍 풍화설월』에서 전략을 강화하는 12가지 방법
-              </p>
+              <p class="p_tit">『파이어 엠블렘 무쌍 풍화설월』에서 전략을 강화하는 12가지 방법</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n7.jpg" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『MONSTER HUNTER RISE: SUNBREAK』 무료 타이틀 업데이트 제1탄
-                Ver.11 배포 시작
-              </p>
+              <p class="p_tit">『MONSTER HUNTER RISE: SUNBREAK』 무료 타이틀 업데이트 제1탄 Ver.11 배포 시작</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
           </div>
-          <div class="news">
+          <div class="news fl">
             <a href="#">
               <img src="img/n8.jpg" alt="" width="276" />
             </a>
             <div class="news_txt">
               <span>뉴스</span>
-              <p class="p_tit">
-                『포켓몬스터스칼렛・바이올렛』의 새로운 정보가 공개되었습니다.
-              </p>
+              <p class="p_tit">『포켓몬스터스칼렛・바이올렛』의 새로운 정보가 공개되었습니다.</p>
               <p class="p_txt">2022.08.10</p>
               <p class="p_txt">닌텐도 스위치</p>
             </div>
@@ -239,8 +226,8 @@
           주요 소프트웨어
           <span>Game Title</span>
         </h3>
-        <div class="im_software_top">
-          <div class="im_software">
+        <div class="im_software_top cf">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c1.jpg" alt="" width="276" />
             </a>
@@ -251,7 +238,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c2.jpg" alt="" width="276" />
             </a>
@@ -262,7 +249,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c3.jpg" alt="" width="276" />
             </a>
@@ -273,7 +260,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c9.png" alt="" width="276" />
             </a>
@@ -286,7 +273,7 @@
           </div>
         </div>
         <div class="im_software_bottom">
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c5.jpg" alt="" width="276" />
             </a>
@@ -297,7 +284,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c6.jpg" alt="" width="276" />
             </a>
@@ -308,7 +295,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c7.jpg" alt="" width="276" />
             </a>
@@ -319,7 +306,7 @@
               <p class="p_txt">한국닌텐도</p>
             </div>
           </div>
-          <div class="im_software">
+          <div class="im_software fl">
             <a href="#">
               <img src="img/c8.jpg" alt="" width="276" />
             </a>
@@ -336,54 +323,24 @@
     <!-- //content_3 -->
     <div class="ct_bn_wrap">
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_1.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_1.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_2.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_2.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_3.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_3.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
     </div>
     <div class="ct_bn_wrap cf">
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_4.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_4.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_5.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_5.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
       <div class="content_banner fl">
-        <a href="#"
-          ><img
-            src="img/banner_6.jpg"
-            alt="닌텐도소프트웨어페이지바로가기"
-            width="373"
-        /></a>
+        <a href="#"><img src="img/banner_6.jpg" alt="닌텐도소프트웨어페이지바로가기" width="373" /></a>
       </div>
     </div>
     <div class="content_4_wrap">
@@ -420,20 +377,16 @@
       <div class="nt_right fl">
         <ul>
           <li class="fl">
-            <a href="#"
-              >닌텐도 3DS 시리즈의 「닌텐도 e숍」 서비스 종료 시기에 관한
-              안내</a
-            >
+            <a href="#">닌텐도 3DS 시리즈의 「닌텐도 e숍」 서비스 종료 시기에 관한 안내</a>
           </li>
           <li class="fl">
-            <a href="#"
-              >『Fitness Boxing』의 마이 데이터 저장 기간에 대한 안내</a
-            >
+            <a href="#">『Fitness Boxing』의 마이 데이터 저장 기간에 대한 안내</a>
           </li>
         </ul>
       </div>
     </div>
     <!-- newnotice -->
+    <div class="cf"></div>
     <div class="link_wrap">
       <div class="link">
         <ul>
@@ -454,7 +407,7 @@
           <a href="#">한국닌텐도</a>
           <ul>
             <li><a href="#">회사개요</a></li>
-            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">찾아오시는 길&ensp;</a></li>
           </ul>
         </li>
         <li class="fl">
@@ -462,7 +415,7 @@
           <ul class="fl">
             <li><a href="#">Nintendo Switch</a></li>
             <li><a href="#">New 닌텐도 3DS XL</a></li>
-            <li><a href="#">New 닌텐도 2DS XL</a></li>
+            <li><a href="#">New 닌텐도 2DS XL&emsp;</a></li>
           </ul>
         </li>
         <li class="fl">
@@ -479,7 +432,7 @@
           <ul class="fl">
             <li><a href="#">Nintendo Switch</a></li>
             <li><a href="#">닌텐도 3DS</a></li>
-            <li><a href="#">고객지원 홈페이지</a></li>
+            <li><a href="#">고객지원&emsp;</a></li>
           </ul>
         </li>
       </ul>

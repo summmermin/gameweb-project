@@ -182,17 +182,19 @@ h3 {
 
 .content_1 h3,
 .content_3 h3 {
-  background: url(/img/icon_more.png) no-repeat 94% 64%;
+  background: url(../img/icon_more.png) no-repeat 94% 64%;
 }
 
 .content_2 {
+  display: block;
   height: 140px;
-  background: #fe7c0a;
-  text-align: center;
+  background: #fe7c0a url(../img/main_banner_eshop.gif) no-repeat center;
+  font-size: 0;
+  text-indent: -999999px;
   float: left;
+  width: 100%;
   padding: 53px 0 0 0;
   margin: 100px 0 0 0;
-  width: 100%;
 }
 .content_2 a {
   color: #fff;
@@ -287,10 +289,10 @@ h3 {
   margin: 12px -11px 0 0;
   height: 119px;
   line-height: 1.2;
-  background: url(/img/content_4_icon.png) no-repeat 17.55% 0;
+  background: url(../img/content_4_icon.png) no-repeat 17.55% 0;
 }
 .content_4_2 ul li:nth-child(2) {
-  background: url(/img/content_4_icon.png) no-repeat 17.55%;
+  background: url(../img/content_4_icon.png) no-repeat 17.55%;
 }
 .content_4_2 ul li:nth-child(3) {
   background-position: 17.55% -238px;
@@ -338,7 +340,7 @@ h3 {
   width: 60px;
   height: 60px;
   display: inline-block;
-  background-image: url(/img/link.png);
+  background-image: url(../img/link.png);
   background-repeat: no-repeat;
 }
 .link ul li:nth-child(1) a {
@@ -589,13 +591,13 @@ footer address {
     width: 100%;
   }
   .content_4_2 ul li:nth-child(2) {
-    background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55%;
+    background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55%;
   }
   .content_4_2 li li:nth-child(1) {
-    background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55% 0;
+    background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55% 0;
   }
   .content_4_2 li {
-    background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55% 0;
+    background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55% 0;
   }
   .content_4_2 ul li:nth-child(3) {
     background-position: 17.55% -238px;
@@ -778,7 +780,7 @@ footer address {
     display: none;
   }
   body .ct_bn_wrap {
-    background: url(/img/banner_1.jpg) no-repeat center;
+    background: url(../img/banner_1.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     display: block;
@@ -787,7 +789,7 @@ footer address {
     cursor: pointer;
   }
   body .ct_bn_wrap_1 {
-    background: url(/img/banner_3.jpg) no-repeat center;
+    background: url(../img/banner_3.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     display: block;

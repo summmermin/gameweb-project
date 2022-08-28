@@ -1,7 +1,6 @@
 $(function(){
   $('.openMOgnb').click(function(e){
     e.preventDefault();
-    // alert()
     $('nav').addClass('on');
     $('nav>ul>li').slideDown('fast');
   });

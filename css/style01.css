@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 h1 {
   height: 53px;
 }
@@ -13,13 +12,16 @@ h1 {
   position: relative;
   z-index: 999;
 }
-
+#navbar .ul_wrap {
+  height: 53px;
+}
 #navbar ul li {
   color: #333;
   display: inline-block;
   padding: 1rem;
   position: relative;
   text-align: center;
+  margin: -2px 0;
 }
 
 #navbar ul li ul {
@@ -27,13 +29,10 @@ h1 {
   width: 100%;
 }
 
-#navbar>ul>li>a {
+#navbar > ul > li > a {
   height: 40px;
-  font-weight: 300;
 }
-#navbar>ul>li>a li a{
-  font-weight: 300;
-}
+
 #navbar ul li:hover ul {
   display: block;
   position: absolute;
@@ -50,14 +49,12 @@ h1 {
   background: rgb(179 175 175);
 }
 
-#navbar>ul>li {
+#navbar > ul > li {
   width: 14%;
 }
-
 .openMOgnb {
   display: none;
 }
-
 .logo a {
   background: url(../img/logo_nintendo_red.gif) no-repeat center;
   display: block;
@@ -68,8 +65,6 @@ h1 {
   background: #e60012;
   text-indent: -9999999px;
   width: 15%;
-  height: 55px;
-
 }
 
 #navbar .login {
@@ -97,7 +92,6 @@ h1 {
   right: 0;
   top: 12px;
 }
-
 .swiper-slide img {
   cursor: pointer;
 }
@@ -108,7 +102,6 @@ h3 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.085em;
-  margin: 0 0 15px 0px;
 }
 
 .img_br img {
@@ -124,14 +117,13 @@ h3 {
 .news .p_tit,
 .im_software .p_tit {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #111;
   line-height: 22px;
   height: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .im_software .p_tit {
   height: 40px;
 }
@@ -149,13 +141,12 @@ h3 {
   max-width: 1440px;
   margin: auto;
 }
-
 .content_1 {
   margin: 100px 0 0 0;
 }
 
-.content_1 h3>span,
-.content_3 h3>span {
+.content_1 h3 > span,
+.content_3 h3 > span {
   margin-left: 11px;
   font-size: 15px;
   font-weight: normal;
@@ -191,8 +182,18 @@ h3 {
 .content_1 h3,
 .content_3 h3 {
   background: url(../img/icon_more.png) no-repeat 94% 64%;
+  margin: 0 0 20px 40px;
 }
-
+.news_top,
+.news_bottom,
+.im_software_top,
+.im_software_bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
 .content_2 {
   display: block;
   height: 140px;
@@ -202,9 +203,8 @@ h3 {
   float: left;
   width: 100%;
   padding: 53px 0 0 0;
-  margin: 100px 0 0 0;
+  margin: 100px 0 100px 0;
 }
-
 .content_2 a {
   color: #fff;
 }
@@ -221,8 +221,6 @@ h3 {
 
 .content_3 {
   max-width: 1400px;
-  margin: 100px 0 0 0;
-  float: left;
 }
 
 .content_3 .im_software_bottom {
@@ -245,16 +243,17 @@ h3 {
   transition: all 0.2s;
   filter: brightness(110%);
 }
-
 .content_1,
 .content_3 {
   margin: 100px 0 0 100px;
 }
-
 .banner_margin {
   margin: 0 0 0 100px;
 }
-
+.ct_bn_wrap .banner_margin {
+  display: flex;
+  justify-content: center;
+}
 .ct_bn_wrap .content_banner img {
   border-radius: 6px;
 }
@@ -298,35 +297,29 @@ h3 {
 .content_4_2 ul li:nth-child(1) a {
   margin: 47px 75px 0 0;
 }
-
 .content_4_2 li {
   margin: 12px -11px 0 0;
   height: 119px;
   line-height: 1.2;
   background: url(../img/content_4_icon.png) no-repeat 17.55% 0;
 }
-
 .content_4_2 ul li:nth-child(2) {
   background: url(../img/content_4_icon.png) no-repeat 17.55%;
 }
-
 .content_4_2 ul li:nth-child(3) {
   background-position: 17.55% -238px;
 }
-
 .content_4_2 li a {
   display: block;
   height: 120px;
   margin: 47px 0 0 0;
 }
-
 .content_4_2 li span {
   color: #fff;
   font-size: 1.2em;
   font-weight: 300;
   margin: 0 0 0 115px;
 }
-
 .newnotice {
   max-width: 1440px;
   margin: 50px auto;
@@ -334,33 +327,27 @@ h3 {
   border-bottom: 1px solid #333;
   padding: 50px 20px 70px 20px;
 }
-
 .nt_left a:nth-child(2) {
   border: 1px solid #33333336;
   padding: 0 7px 3px 7px;
   border-radius: 50px;
   background: #c0c0c04a;
 }
-
 .nt_right a {
   width: 475px;
   margin: 0 0 0 240px;
 }
-
 .ct_bn_wrap {
   margin: 95px auto;
   max-width: 1440px;
 }
-
 .link_wrap {
   max-width: 1440px;
   margin: auto;
 }
-
 .ct_bn_wrap img {
   margin: 25px;
 }
-
 .link a {
   width: 60px;
   height: 60px;
@@ -368,36 +355,28 @@ h3 {
   background-image: url(../img/link.png);
   background-repeat: no-repeat;
 }
-
 .link ul li:nth-child(1) a {
   background-position: 0 -160px;
 }
-
 .link ul li:nth-child(2) a {
   background-position: -70px -160px;
 }
-
 .link ul li:nth-child(3) a {
   background-position: -140px -160px;
 }
-
 .link ul li:nth-child(4) a {
   background-position: -210px -160px;
 }
-
 .link li {
   margin: 10px;
 }
-
 .link_2 a:nth-child(1) {
-  margin: 10px 0 0px 350px;
   width: 370px;
   height: 60px;
   display: inline-block;
   background-image: url(/img/link.png);
   background-repeat: no-repeat;
 }
-
 .link_2 a:nth-child(2) {
   width: 370px;
   height: 60px;
@@ -405,7 +384,6 @@ h3 {
   display: inline-block;
   background: url(/img/link_2.png) no-repeat top left;
 }
-
 .nav_2 {
   margin: 30px auto;
 }
@@ -415,7 +393,7 @@ h3 {
   margin: 0px 100px 40px 0;
 }
 
-.nav_2>ul>li>a {
+.nav_2 > ul > li > a {
   display: block;
   position: relative;
   margin-bottom: 20px;
@@ -426,7 +404,7 @@ h3 {
   cursor: default;
 }
 
-.nav_2>ul>li>a:before {
+.nav_2 > ul > li > a:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -444,40 +422,33 @@ h3 {
   letter-spacing: -0.07em;
   font-size: 14px;
 }
-
-.nav_2>ul>li {
+.nav_2 > ul > li {
   max-width: 260px;
   margin: 0 0 0 30px;
 }
-
 .nav_2 {
   max-width: 1200px;
   margin: 30px auto;
 }
-
 footer {
   padding: 30px 0;
   background: #f5f5f5;
 }
-
 .footer_wrap a,
 .footer_wrap span,
 .footer_wrap p {
   font-size: 14px;
   color: #737373;
 }
-
 footer address {
   font-size: 14px;
   line-height: 24px;
   color: #737373;
 }
-
 .footer_wrap {
   max-width: 1440px;
   margin: auto;
 }
-
 /* //contents */
 /* ========swiper========== */
 .swiper {
@@ -511,11 +482,9 @@ footer address {
   height: 70%;
   object-fit: cover;
 }
-
 .closePop {
   display: none;
 }
-
 /* =================미디어쿼리======================= */
 
 /* 모바일 버전 min-width: 375px max-width: 800px */
@@ -523,7 +492,6 @@ footer address {
   #navbar .login a {
     display: none;
   }
-
   .openMOgnb {
     display: block;
     position: absolute;
@@ -532,7 +500,6 @@ footer address {
     width: 23px;
     height: 16px;
   }
-
   .openMOgnb span {
     box-sizing: border-box;
     display: block;
@@ -542,8 +509,7 @@ footer address {
     border-radius: 10px;
     background: #fff;
   }
-
-  .openMOgnb span+span {
+  .openMOgnb span + span {
     width: 17px;
   }
 
@@ -551,30 +517,25 @@ footer address {
     width: 25px;
     margin-bottom: 0px;
   }
-
   .logo {
     width: 100%;
   }
-
-  .logo_wrap>ul {
+  .logo_wrap > ul {
     display: none;
   }
-
   .content_1 h3 span,
   .content_3 h3 span {
     display: none;
   }
 
-  #navbar>ul>li {
+  #navbar > ul > li {
     width: 100%;
     display: none;
   }
-
-  #navbar>ul>li ul {
+  #navbar > ul > li ul {
     display: none;
   }
-
-  .openMOgnb:hover+.ul_wrap>li {
+  .openMOgnb:hover + .ul_wrap > li {
     height: auto;
   }
 
@@ -584,7 +545,6 @@ footer address {
     right: 15px;
     top: -2px;
   }
-
   #navbar .closePop a {
     display: block;
     width: 60px;
@@ -594,28 +554,22 @@ footer address {
     background-size: 48px;
     text-indent: -999px;
   }
-
-  #navbar>ul>li:hover {
+  #navbar > ul > li:hover {
     display: none;
     overflow: hidden;
   }
-
   #navbar .ul_wrap li:first-child {
     padding: 0 16px 16px 16px;
   }
-
   .search a {
     display: none;
   }
-
   #navbar .search {
     z-index: -999999;
   }
-
   .content_banner a img {
     display: none;
   }
-
   body .ct_bn_wrap {
     background: url(/img/banner_1.jpg) no-repeat center;
     background-size: cover;
@@ -625,7 +579,6 @@ footer address {
     overflow: hidden;
     cursor: pointer;
   }
-
   body .ct_bn_wrap_1 {
     background: url(/img/banner_3.jpg) no-repeat center;
     background-size: cover;
@@ -635,7 +588,6 @@ footer address {
     overflow: hidden;
     cursor: pointer;
   }
-
   .content_1,
   .content_3 {
     margin: 50px 0 0 55px;
@@ -645,63 +597,49 @@ footer address {
   .content_3 h3 {
     background: none;
   }
-
   .content_4_2 li {
     float: none;
     background: #e60012;
     width: 100%;
   }
-
   .content_4_2 ul li:nth-child(2) {
     background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55%;
   }
-
   .content_4_2 li li:nth-child(1) {
     background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55% 0;
   }
-
   .content_4_2 li {
     background: #e60012 url(../img/content_4_icon.png) no-repeat 17.55% 0;
   }
-
   .content_4_2 ul li:nth-child(3) {
     background-position: 17.55% -238px;
   }
-
   .content_4_2 li span {
     display: block;
     padding: 50px 0 0 0;
     font-weight: 600;
   }
-
   .newnotice {
     margin: 350px auto;
   }
-
   .nt_right {
     margin: -33px 0 0 0;
   }
-
   .nt_right a {
     margin: 0 0 0 140px;
   }
-
   .newnotice {
     margin: 350px auto 70px auto;
   }
-
   .link_2 a:nth-child(1) {
     margin: 0 0 0 0;
   }
-
   .link_2 a:nth-child(2) {
     margin: 0 0 0 0;
   }
-
   .link {
     margin: 0 0 0 0;
   }
-
   .nt_right a {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -710,14 +648,27 @@ footer address {
     height: 20px;
     display: block;
   }
+  .im_software_top .im_software:nth-child(4),
+  .im_software_bottom .im_software:nth-child(4),
+  .news_bottom .news:nth-child(4),
+  .news_top .news:nth-child(4) {
+    display: none;
+  }
+  .im_software_top .im_software:nth-child(3),
+  .im_software_bottom .im_software:nth-child(3),
+  .news_bottom .news:nth-child(3),
+  .news_top .news:nth-child(3) {
+    display: none;
+  }
+  .nav_2 ul ul {
+    display: none;
+  }
 }
-
 /* 테블릿 버전 min-width: 801px max-width: 1065px */
 @media screen and (min-width: 801px) and (max-width: 1065px) {
   #navbar .login a {
     display: none;
   }
-
   .openMOgnb {
     display: block;
     position: absolute;
@@ -726,7 +677,6 @@ footer address {
     width: 23px;
     height: 16px;
   }
-
   .openMOgnb span {
     box-sizing: border-box;
     display: block;
@@ -736,8 +686,7 @@ footer address {
     border-radius: 10px;
     background: #fff;
   }
-
-  .openMOgnb span+span {
+  .openMOgnb span + span {
     width: 17px;
   }
 
@@ -745,25 +694,21 @@ footer address {
     width: 25px;
     margin-bottom: 0px;
   }
-
   .logo {
     width: 100%;
   }
-
-  .logo_wrap>ul {
+  .logo_wrap > ul {
     display: none;
   }
 
-  #navbar>ul>li {
+  #navbar > ul > li {
     width: 100%;
     display: none;
   }
-
-  #navbar>ul>li ul {
+  #navbar > ul > li ul {
     display: none;
   }
-
-  .openMOgnb:hover+.ul_wrap>li {
+  .openMOgnb:hover + .ul_wrap > li {
     height: auto;
   }
 
@@ -773,7 +718,6 @@ footer address {
     right: 15px;
     top: -2px;
   }
-
   #navbar .closePop a {
     display: block;
     width: 60px;
@@ -783,98 +727,76 @@ footer address {
     background-size: 48px;
     text-indent: -999px;
   }
-
-  #navbar>ul>li:hover {
+  #navbar > ul > li:hover {
     display: none;
     overflow: hidden;
   }
-
   #navbar .ul_wrap li:first-child {
     padding: 0 16px 16px 16px;
   }
-
   .search a {
     display: none;
   }
-
   #navbar .search {
     z-index: -999999;
   }
-
   .nt_right {
     margin: 0px 0px;
   }
-
   .content_1,
   .content_3 {
     margin: 50px 0 0 50px;
   }
-
   .content_1 .news,
   .content_3 .im_software {
     margin: 0 30px 30px 0;
   }
-
   .content_4_2 li {
     float: none;
     background: #e60012;
     width: 100%;
   }
-
   .content_4_2 ul li:nth-child(2) {
     background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55%;
   }
-
   .content_4_2 li li:nth-child(1) {
     background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55% 0;
   }
-
   .content_4_2 li {
     background: #e60012 url(/img/content_4_icon.png) no-repeat 17.55% 0;
   }
-
   .content_4_2 ul li:nth-child(3) {
     background-position: 17.55% -238px;
   }
-
   .content_4_2 li span {
     display: block;
     padding: 50px 0 0 0;
     font-weight: 600;
   }
-
   .newnotice {
     margin: 350px auto;
   }
-
   .nt_right a {
     margin: 0 0 0 140px;
   }
-
   .newnotice {
     margin: 350px auto 70px auto;
   }
-
   .link_2 a:nth-child(1) {
     margin: 0 0 0 0;
   }
-
   .link_2 a:nth-child(2) {
     margin: 0 0 0 0;
   }
-
   .link {
     margin: 0 0 0 0;
   }
-
   .nav_2 ul ul li {
     display: none;
   }
-
   .nav_2 ul {
     margin: 0 0 0 0;
   }
-
   .nt_right a {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -883,11 +805,9 @@ footer address {
     height: 20px;
     display: block;
   }
-
   .content_banner a img {
     display: none;
   }
-
   body .ct_bn_wrap {
     background: url(../img/banner_1.jpg) no-repeat center;
     background-size: cover;
@@ -897,7 +817,6 @@ footer address {
     overflow: hidden;
     cursor: pointer;
   }
-
   body .ct_bn_wrap_1 {
     background: url(../img/banner_3.jpg) no-repeat center;
     background-size: cover;
@@ -907,34 +826,53 @@ footer address {
     overflow: hidden;
     cursor: pointer;
   }
-
   .im_software_top .im_software:nth-child(4),
   .im_software_bottom .im_software:nth-child(4),
   .news_bottom .news:nth-child(4),
   .news_top .news:nth-child(4) {
     display: none;
   }
+  .im_software_top .im_software:nth-child(3),
+  .im_software_bottom .im_software:nth-child(3),
+  .news_bottom .news:nth-child(3),
+  .news_top .news:nth-child(3) {
+    display: none;
+  }
+  .content_1 .news,
+  .content_3 .im_software {
+    height: 307px;
+    margin: 0 70px 70px 0;
+  }
 }
-
-/* 피시 버전 min-width: 1066px max-width: 1440px  */
-@media screen and (min-width: 1066px) and (max-width: 1440px) {
+/* 피시 버전 min-width: 1066px max-width: 1322px  */
+@media screen and (min-width: 1066px) and (max-width: 1322px) {
   #navbar .login a {
     margin: -4px -25px;
   }
-
   .closePop {
     display: none;
   }
-
+  .im_software_top .im_software:nth-child(4),
+  .im_software_bottom .im_software:nth-child(4),
+  .news_bottom .news:nth-child(4),
+  .news_top .news:nth-child(4) {
+    display: none;
+  }
+  .content_1 .news,
+  .content_3 .im_software {
+    height: 307px;
+    margin: 0 70px 70px 0;
+  }
   .link_wrap .link_2 a {
     margin: 0 0 0 0;
   }
-
-  .nav_2>ul>li {
+  .nav_2 > ul > li {
     margin: 0 0 0 15px;
   }
-
   .nt_right a {
     margin: 0 0 0 10px;
+  }
+  .ct_bn_wrap .banner_margin .content_banner:nth-child(3) {
+    display: none;
   }
 }

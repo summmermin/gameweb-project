@@ -22,7 +22,6 @@ body{
 input,select,textarea{
   box-sizing: border-box;
   font-size: 15px;
-  font-family: 'Malgun Gothic','맑은 고딕',sans-serif;
   letter-spacing: -1px;
   color: #444;
   -webkit-appearance:none;
